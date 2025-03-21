@@ -124,3 +124,48 @@ body {
 .grid-item img {
     animation: fadeIn 1s ease-in-out;
 }
+
+/* Tambahkan ini di bagian bawah file CSS Anda */
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 grid di mobile */
+        gap: 10px; /* Jarak antar grid diperkecil di mobile */
+    }
+
+    .grid-item {
+        padding: 10px; /* Padding diperkecil di mobile */
+    }
+
+    .grid-item h3 {
+        font-size: 1em; /* Ukuran font diperkecil di mobile */
+    }
+
+    .grid-item p {
+        font-size: 0.9em; /* Ukuran font diperkecil di mobile */
+    }
+
+    .btn-wa {
+        padding: 6px 12px; /* Tombol diperkecil di mobile */
+        font-size: 0.9em; /* Ukuran font tombol diperkecil di mobile */
+    }
+
+    .header-umkm {
+        flex-direction: column; /* Header diubah ke tata letak kolom di mobile */
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo-umkm img {
+        margin-right: 0; /* Margin dihapus di mobile */
+        margin-bottom: 10px; /* Jarak antara logo dan teks di mobile */
+    }
+
+    .nama-umkm h1 {
+        font-size: 1.5em; /* Ukuran font judul diperkecil di mobile */
+    }
+
+    .nama-umkm p {
+        font-size: 1em; /* Ukuran font slogan diperkecil di mobile */
+    }
+}
