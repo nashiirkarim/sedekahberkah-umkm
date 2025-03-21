@@ -13,8 +13,6 @@ body {
     padding: 15px;
 }
 
-/* Tambahkan atau perbarui class berikut di file CSS Anda */
-
 .grid-item {
     background: linear-gradient(135deg, #ff9966, #ff5e62);
     border-radius: 8px;
@@ -30,30 +28,6 @@ body {
 .grid-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
-
-.product-info {
-    margin-top: 10px;
-}
-
-.product-info h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.product-info .price {
-    margin: 5px 0 0;
-    font-size: 1.1em;
-    color: #ffeb3b; /* Warna kuning untuk harga */
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3); /* Latar belakang semi-transparan */
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
 }
 
 .image-container {
@@ -78,31 +52,28 @@ body {
     transform: scale(1.1);
 }
 
-.grid-item h3 {
-    margin: 10px 0 5px;
-    color: white;
-    font-size: 1.2em;
-}
-
-.grid-item p {
-    margin: 5px 0;
-    color: white;
-    font-size: 1em;
-}
-
-.btn-wa {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #25d366;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.product-info {
     margin-top: 10px;
-    transition: background-color 0.3s ease;
 }
 
-.btn-wa:hover {
-    background-color: #128c7e;
+.product-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.product-info .price {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #ffeb3b; /* Warna kuning untuk harga */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3); /* Latar belakang semi-transparan */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .header-umkm {
@@ -141,21 +112,6 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.grid-item img {
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Tambahkan ini di bagian bawah file CSS Anda */
-
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr); /* 2 grid di mobile */
@@ -170,13 +126,8 @@ body {
         font-size: 1em; /* Ukuran font diperkecil di mobile */
     }
 
-    .grid-item p {
-        font-size: 0.9em; /* Ukuran font diperkecil di mobile */
-    }
-
-    .btn-wa {
-        padding: 6px 12px; /* Tombol diperkecil di mobile */
-        font-size: 0.9em; /* Ukuran font tombol diperkecil di mobile */
+    .grid-item .price {
+        font-size: 0.9em; /* Ukuran font harga diperkecil di mobile */
     }
 
     .header-umkm {
@@ -197,58 +148,4 @@ body {
     .nama-umkm p {
         font-size: 1em; /* Ukuran font slogan diperkecil di mobile */
     }
-}
-
-/* Tambahkan atau perbarui class berikut di file CSS Anda */
-
-.detail-produk {
-    text-align: center;
-    padding: 20px;
-}
-
-.detail-produk .image-container {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.detail-produk h2 {
-    font-size: 1.8em;
-    color: white;
-    margin: 15px 0 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.detail-produk .price {
-    font-size: 1.5em;
-    color: #ffeb3b; /* Warna kuning untuk harga */
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3); /* Latar belakang semi-transparan */
-    padding: 8px 15px;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-.detail-produk .description {
-    font-size: 1.1em;
-    color: white;
-    margin: 15px 0;
-    line-height: 1.5;
-}
-
-.btn-wa {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #25d366;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-wa:hover {
-    background-color: #128c7e;
 }
