@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -20,6 +20,7 @@ header {
 
 header h1 {
     margin-bottom: 10px;
+    text-shadow: 0 0 10px #66ff00, 0 0 20px #66ff00;
 }
 
 main {
@@ -29,6 +30,7 @@ main {
 .produk h2 {
     text-align: center;
     margin-bottom: 30px;
+    text-shadow: 0 0 10px #66ff00, 0 0 20px #66ff00;
 }
 
 .grid-produk {
@@ -42,11 +44,12 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .produk-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .produk-item img {
@@ -70,15 +73,28 @@ main {
 .produk-item a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #25d366;
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    animation: pulse 2s infinite ease-in-out;
 }
 
 footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
