@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.produk h2 {
+    text-align: center;
+}
+
+.daftar-produk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produk-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.produk-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produk-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .produk-item {
+        width: 100%;
+    }
+}
