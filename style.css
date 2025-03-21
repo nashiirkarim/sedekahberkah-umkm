@@ -53,14 +53,6 @@ body {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .grid-item {
-        aspect-ratio: 1 / 1; /* Menambahkan rasio aspek 1:1 di layar seluler */
-    }
-
-    .grid-item img {
-        height: 100%; /* Mengubah tinggi menjadi 100% di layar seluler */
-    }
 }
 
 .grid-item:nth-child(even) {
