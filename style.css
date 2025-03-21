@@ -60,3 +60,24 @@ body {
 .grid-item:nth-child(odd) {
     background: linear-gradient(135deg, #ff9966, #ff5e62);
 }
+
+.header-umkm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.logo-umkm img {
+    max-height: 80px;
+    margin-right: 20px;
+}
+
+.nama-umkm h1 {
+    margin: 0;
+}
+
+.nama-umkm p {
+    margin: 5px 0 0;
+}
