@@ -53,7 +53,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
-    aspect-ratio: 1 / 1; /* Mengatur rasio aspek 1:1 */
+    aspect-ratio: 1 / 1; /* Menjaga rasio 1:1 */
 }
 
 .grid-item:hover {
@@ -70,8 +70,8 @@ body {
 
 .grid-item img {
     width: 100%;
-    height: 100%; /* Mengubah tinggi menjadi 100% dari grid-item */
-    object-fit: cover;
+    height: 100%; /* Mengisi seluruh area grid-item */
+    object-fit: cover; /* Memastikan gambar menutupi area dengan benar */
     border-radius: 8px;
     margin-bottom: 10px;
     animation: fadeIn 1s ease-in-out;
@@ -101,16 +101,9 @@ body {
     }
 }
 
+/* Responsivitas */
 @media (max-width: 600px) {
     .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .grid-item {
-        aspect-ratio: 1 / 1; /* Mengatur rasio aspek 1:1 di mobile */
-    }
-
-    .grid-item img {
-        height: 100%; /* Mengubah tinggi menjadi 100% dari grid-item di mobile */
+        grid-template-columns: repeat(2, 1fr); /* Mengubah jumlah kolom menjadi 2 */
     }
 }
