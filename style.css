@@ -18,12 +18,13 @@ body {
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1; /* Menambahkan rasio aspek 1:1 */
 }
 
 .grid-item img {
     width: 100%;
-    height: 200px; /* Sesuaikan tinggi sesuai kebutuhan */
-    object-fit: cover; /* atau object-fit: contain; */
+    height: 100%; /* Mengubah tinggi menjadi 100% agar sesuai dengan aspek 1:1 */
+    object-fit: cover; /* Memastikan gambar menutupi area dengan benar */
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -142,7 +143,7 @@ body {
 }
 
 .grid-item:nth-child(odd) {
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    background: linear-gradient(130deg, #ff9966, #ff5e62);
 }
 
 .btn-wa {
